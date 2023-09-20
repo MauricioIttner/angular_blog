@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+const on = document.getElementById('on');
+const show_hide = document.getElementById('on');
 
 @Component({
   selector: 'app-menu-bar',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent {
+
+
 
 }

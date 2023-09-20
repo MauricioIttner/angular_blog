@@ -1,29 +1,33 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
+<button (click)="toggleElement()">{{ nameButton}}</button>
 
-<app-menu-title></app-menu-title>
 
-<div class="container__articles">
+<app-menu-title *ngIf="showElement"></app-menu-title>
+
+<div *ngIf="showElement" class="container__articles">
   <div class="articles__main">
     <app-big-card
+    Id="1"
     photoCover="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/demolidor_capa__210806b-1210x544.jpg"
-    cardDescription="Nova Temporada de Demolidor Confirmada. Saiba Mais..."
-    cardTitle="Demolidor nova Temporada"
+    cardDescription="Nova Série do Demolidor esta pra ser lançada"
+    cardTitle="Demolidor nova Série"
     ></app-big-card>
   </div>
   <div class="articles__others">
     <app-small-card
+    Id="2"
     cardTitle="Nova Serie anunciada na Disney+, Cavaleiro Da Lua"
     photoCover="https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2022/10/legiao_D8mFjTNqpZY5.png.webp"
     >
 
     </app-small-card>
     <app-small-card
-    cardTitle="Nova Serie anunciada na Disney+, Cavaleiro Da Lua"
-    photoCover="https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2022/10/legiao_D8mFjTNqpZY5.png.webp"></app-small-card>
+    Id="3"
+    cardTitle="Matt Murdock melhor Demolidor"
+    photoCover="https://upload.wikimedia.org/wikipedia/en/1/1b/Charlie_Cox_Daredevil.jpg"></app-small-card>
     <app-small-card
-    cardTitle="Nova Serie anunciada na Disney+, Cavaleiro Da Lua"
-    photoCover="https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2022/10/legiao_D8mFjTNqpZY5.png.webp"></app-small-card>
+    Id="4"
+    cardTitle="Demolidor é pego na mentira ao pegar tijolo qe atingiria Homem-Aranha"
+    photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2022/04/Demolidor-pegando-o-tijolo-em-Sem-Volta-Para-Casa.jpg"></app-small-card>
   </div>
+
 </div>

@@ -10,7 +10,8 @@ export class SmallCardComponent implements OnInit{
   photoCover: string = '';
   @Input()
   cardTitle: string = 'Cavaleiro Da Lua, Nova serie da disney+';
-
+  @Input()
+  Id:string='0';
   ngOnInit(): void {
   }
 }

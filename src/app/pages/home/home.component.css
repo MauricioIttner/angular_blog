@@ -6,11 +6,7 @@
   justify-content: center;
 }
 
-header{
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
+
 .articles__others{
   margin-left: 40px;
 }
